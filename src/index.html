@@ -1,0 +1,756 @@
+<!--
+  Hello!
+  -
+  Simplefolio is a clean and responsive portfolio template for Developers!
+  Created by Jacobo Martinez.
+  -
+  Github Repo: https://github.com/cobidev/simplefolio/
+  Readme: https://github.com/cobidev/simplefolio/README.md
+  -
+  For business & inquires, contact me -> jacobojavier98@gmail.com
+-->
+<!DOCTYPE html>
+<html lang="en" class="sr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+    
+      body {
+        font-family: Verdana, sans-serif;
+      }
+    
+      .mySlides {
+        display: none;
+      }
+    
+      img {
+        vertical-align: middle;
+      }
+    
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 2000px;
+        position: relative;
+    
+    
+    
+    
+    
+      }
+    
+    
+      /* Caption text */
+      .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+    
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+    
+      /* The dots/bullets/indicators */
+      .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+    
+      .active {
+        background-color: #717171;
+      }
+    
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+    
+      @-webkit-keyframes fade {
+        from {
+          opacity: .4
+        }
+    
+        to {
+          opacity: 1
+        }
+      }
+    
+      @keyframes fade {
+        from {
+          opacity: .4
+        }
+    
+        to {
+          opacity: 1
+        }
+      }
+    
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .text {
+          font-size: 11px
+        }
+      }
+    </style>
+
+    <!-- Todo: put here your site title -->
+    <title>Kartik Gotmare | Portfolio</title>
+    <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
+
+    <meta name="keywords" content="[username], [name], skill" />
+    <!-- Todo: improve your SEO by adding a small description of you -->
+    <meta name="description" content="[Your name here] | Developer" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.scss" />
+    <script
+      defer
+      src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
+    ></script>
+
+    <!-- Todo: remove the below script once you finish your portfolio -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </head>
+
+  <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
+  <body>
+    <div id="top"></div>
+
+    <!-- **** Hero Section **** -->
+    <section id="hero" class="jumbotron">
+      <div class="container">
+        <h1 class="hero-title load-hidden">
+          Hi, my name is <span class="text-color-main">Kartik Gotmare</span>
+          <br />
+          CSE(Specialization in Gaming Tech) Student.
+        </h1>
+        <p class="hero-cta load-hidden">
+          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
+            >Know more</a
+          >
+        </p>
+      </div>
+    </section>
+    <!-- /END Hero Section -->
+
+    <!-- **** About Section **** -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title load-hidden">About me</h2>
+        <div class="row about-wrapper">
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__image load-hidden">
+              <img
+                alt="Profile Image"
+                class="img-fluid rounded shadow-lg"
+                height="auto"
+                width="300px"
+                src="assets/photo.jpg"
+                alt="Profile Image"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__info load-hidden">
+              <p class="about-wrapper__info-text">
+                My name is Kartik Gotmare. I am from Nagpur, Maharashtra. I am currently pursuing my B.Tech Degree for Vellore Institute Of Technology BHOPAL in computer science engineering with specialization in gaming technology with an aggregate of 80%. 
+
+              </p>
+              <p class="about-wrapper__info-text">
+                My father’s name is Mr. Sunil Gotmare working as Senior Manager in Coal India. My mother’s
+                name is Mrs. Shweta Gotmare, and she is a homemaker. They have always encouraged me to pursue my dreams.
+              </p>
+              <p class="about-wrapper__info-text">
+                My elder Brother name is Mr. Kunal Gotmare [BTech Electrical Engineer from NIFT Bhopal] currently pursuing PG 
+                in Project Management, Canada. They always have been the pillars behind my success.              
+              </p>
+              <p class="about-wrapper__info-text">
+                My hobbies are playing football, cricket and also listening to music. My passion is Football and I have also represented in inter-school level central DPS zone in Under 14 and 16 which was conducted in DPS Indore and also played for the Nagpur Division. 
+
+              </p>
+              <span class="d-flex mt-3">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--resume"
+                  href="assets/kartikresume.pdf"
+                >
+                  View Resume
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
+
+    <!-- **** Projects Section **** -->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Projects</h2>
+
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Project Exhibition 1</h3>
+                <h3 class="project-wrapper__text-title">Epiviosi</h3>
+                <div>
+                  <p class="mb-4">
+                    <br>Software used: Unity 3D, C#, JavaScript</br>
+                    <br>Role: Designer</br>
+                    This is a demo of a 2D Endless Platformer game where you have lost your crew in space and landed on a planet where you have to fight off aliens and survive at any cost. The game has various pickups, points where you have to dodge and battle with the properties of the planet so that you can get a way to stay alive and contact your team.
+                  </p>
+                </div>
+                <!-- <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="#!"
+                >
+                  See Live
+                </a> -->
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/kartikgotmare/Epiviosi"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/projectk1.jpg"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Project Exhibition 2- Football Team Webpage</h3>
+                <h3 class="project-wrapper__text-title">Football Team Webpage</h3>
+                <div>
+                  <p class="mb-4">
+                    <br>Software used: HTML5, CSS, Excel.
+                    Role: Developer</br>
+                    This is a webpage used to display all the stats and data of the football team Manchester United FC. 
+                    It included data from the season 2019-2020.
+                     All the player details are also available on the webpage. 
+                  </p>
+                </div>
+                <a
+                  <!-- rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="#!"
+                >
+                  See Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="#!"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  > -->
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/projectk2.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">EPIC Project:</h3>
+                <h3 class="project-wrapper__text-title">Bhumitra</h3>
+                <div>
+                  <p class="mb-4">
+                    <br>Software used: Android Studio, Firebase DB, MCAD.
+                    Role: Research Work, Existing Projects, Andriod App Implementation, Documentation</br>
+                    BHUMITRA is a smart agriculture project focusing on increasing the yield of farms by implementing the latest technology able to provide statistics on important factors such as soil moisture, light intensity, temperature and much more along with the resources available nearby right on your phone.
+                    This project consists of an android application and a smart automated electrical system which works in alliance to each other. The automated system is capable to monitor air quality, intruders in the field, fire and control motors and sprinklers.
+                    The project looks forward to increase in productivity with improved agility and better control over the whole process.
+
+
+                  </p>
+                </div>
+                <!-- <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="#!"
+                >
+                  See Live
+                </a> -->
+                <!-- <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="#!"
+                >
+                  Source Code
+                </a> -->
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/projectk3.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Capstone Project</h3>
+                <h3 class="project-wrapper__text-title">Decipher</h3>
+                <div>
+                  <p class="mb-4">
+                    <br>Software used: Bootstrap, JavaScript, Python</br>
+                    Decipher is a web-app which is an amalgamation of these solutions combined with modern day technologies.
+                    It provides users with concise news articles on topics of their interest using the recommender module and at the same
+                    time performs a legitimacy check on the articles to prevent false news from spreading.
+
+          
+                  </p>
+                </div>
+                <a <!-- rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="#!">
+                  See Live
+                </a>
+                <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="#!">
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"> -->
+                    <img alt="Project Image" class="img-fluid" src="assets/project4.jpg" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Other Projects:</h3>
+                <h3 class="project-wrapper__text-title">VIT BHOPAL VR Game</h3>
+                <div>
+                  <p class="mb-4">
+                    <br>Software used: Unity-3D</br>
+                    In this VR game, we developed a replica of our campus using unity 3D. 
+                    The main objects which are used in the game are cube, sphere and cuboid. 
+                    Our team went to different places like Ashta, Sehore, and Bhopal and showcased the VR Game in public which was liked by many people. We also earned a decent amount of money by showcasing our game.  Through this game, one can take a tour of our campus just sitting at home or from anywhere. The only requirement will be a VR headset. 
+
+          
+                  </p>
+                </div>
+                <!-- <a
+                            rel="noreferrer"
+                            target="_blank"
+                            class="cta-btn cta-btn--hero"
+                            href="#!"
+                          >
+                            See Live
+                          </a> -->
+                <!-- <a
+                            rel="noreferrer"
+                            target="_blank"
+                            class="cta-btn text-color-main"
+                            href="#!"
+                          >
+                            Source Code
+                          </a> -->
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt">
+                    <img alt="Project Image" class="img-fluid" src="assets/projectk5.png" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Curriculum Achievements </h3>
+                <h3 class="project-wrapper__text-title">Certifications</h3>
+                <div>
+                  <p class="mb-4">
+                    <br></br>
+                  Associative Analytics – Nasscom
+                  Introduction to Html, CSS, JavaScript for web Developer – Coursera
+                  Introduction to Project Management – Simpli Learn 
+                  Marketing Management – VIT Online 
+                  Foundations: Data, Data, Everywhere –  Coursera 
+                  Programming for Everybody (Getting Started with Python) –  Coursera 
+                  R Programming –  Coursera </p>
+                </div>
+                <!-- <a
+                                      rel="noreferrer"
+                                      target="_blank"
+                                      class="cta-btn cta-btn--hero"
+                                      href="#!"
+                                    >
+                                      See Live
+                                    </a> -->
+                <!-- <a
+                                      rel="noreferrer"
+                                      target="_blank"
+                                      class="cta-btn text-color-main"
+                                      href="#!"
+                                    >
+                                      Source Code
+                                    </a> -->
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt">
+                    <img alt="Project Image" class="img-fluid" src="assets/projectk6.png" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+        </div>
+      </div>
+    </section>
+    <!-- /END Projects Section -->
+
+    <!-- **** About Section **** -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">
+          Technical Skills
+        </h2>
+        <div class="row about-wrapper">
+    
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__image">
+              <img class="img-fluid rounded shadow-lg" height="auto" width="300px" src="./assets/skills.png"
+                alt="Profile Image" />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__info">
+    
+              <p class="about-wrapper__info-text" style="text-align:center">
+                Game Development: Unity 3D<br>
+                Unity<br>
+                Unity 3D<br>
+                Virtual Reality<br> 
+                Augmented Reality <br>
+                Java <br> 
+                Databases: MySQL<br>
+                 Python (Intermediate)<br>
+
+              </p>
+    
+    
+              <span class="d-flex mt-3">
+    
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
+    
+
+    <!-- **** Certificates Section **** -->
+    <section id="Certificates">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">
+            Certificates
+          </h2>
+          <center>
+    
+            <!-- Each .row is a project -->
+    
+    
+            <div class="col-lg-4 col-sm-12">
+    
+              <div class="project-wrapper__text">
+    
+    
+                <div class="slideshow-container">
+                  <center>
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 3</div>
+                      <img src="./assets/3.jpg" style="width:100%">
+                      <div class="text">Caption Text</div>
+                    </div>
+    
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <img src="./assets/2.jpg" style="width:100%">
+                      <div class="text">Caption Two</div>
+                    </div>
+    
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 3</div>
+                      <img src="./assets/4.jpg" style="width:100%">
+                      <div class="text">Caption Three</div>
+                    </div>
+                  </center>
+                </div>
+                <br>
+          </center>
+          <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+    
+          <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) { slideIndex = 1 }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex - 1].style.display = "block";
+              dots[slideIndex - 1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+          </script>
+        </div>
+      </div>
+      <!--  <div class="col-lg-8 col-sm-12">
+                  <div class="project-wrapper__image">
+                    <a href="#!" target="_blank">
+                      <div data-tilt class="thumbnail rounded">
+                        <img class="img-fluid" src="./assets/project.jpg" />
+                      </div>
+                    </a>
+                  </div>
+                </div> -->
+      </div>
+      <!-- /END Project -->
+      </div>
+      </div>
+    </section>
+    <!-- /END Certificates Section -->
+
+    <!-- **** Achievement Section **** -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">
+          Extra-Curricular Achievements
+        </h2>
+        <div class="row about-wrapper">
+    
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__image">
+              <img class="img-fluid rounded shadow-lg" height="auto" width="300px" src="./assets/achv.png"
+                alt="Profile Image" />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__info">
+    
+              <p class="about-wrapper__info-text" style="text-align:center">
+                Won prize money in My VIT Bhopal Game Design Competition – Gaming Club, VIT Bhopal<br>
+                Won 3rd prize in Treasure Hunt – Advitya, VIT Bhopal <br>
+                Participated in the Unity Workshop – Gaming Club, VIT Bhopal <br>
+                Participated in the Unity Workshop – Gaming Club, VIT Bhopal<br>
+    
+              </p>
+    
+    
+              <span class="d-flex mt-3">
+    
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END Achievement Section -->
+
+    <!-- **** Future Section **** -->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Future Scope</h2>
+    
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Future Goals</h3>
+                <div>
+                  <p class="mb-4">
+                    My short-term Goal is to get placed into a reputed company and get a good knowledge over there for few years.<br><br>
+
+                    Long term goal is to work in my Dream Company and help the world to become a better place in terms of technology. I also want to explore Automobile Industry this will be my passion. <br>    
+                  </p>
+                </div> 
+               </div>
+              </div>           
+          </div>
+          
+          <!-- /END Project --> 
+          </div>
+          </div>
+          </section>
+
+    <!-- /END Projects Section -->
+
+    <!-- **** Contact Section **** -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">
+        Contact
+      </h2>
+      <div class="contact-wrapper">
+        <p class="contact-wrapper__text">
+          kartikgotmarecr7@gmail.com<br>
+          +91-8983221836
+        </p>
+        <a target="_blank" class="cta-btn cta-btn--resume" href="mailto:kartikgotmarecr7@gmail.com">Call to Action</a>
+      </div>
+    </div>
+  </section>
+  <!-- /END Contact Section -->
+
+  <!-- **** Footer Section **** -->
+  <footer class="footer navbar-static-bottom">
+    <div class="container">
+      <a href="#top" class="back-to-top">
+        <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+      </a>
+      <div class="social-links">
+        <a href="https://twitter.com/kartik" target="_blank">
+          <i class="fa fa-twitter fa-inverse"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/kartik-gotmare" target="_blank">
+          <i class="fa fa-linkedin fa-inverse"></i>
+        </a>
+        <a href="https://github.com/kartikgotmare" target="_blank">
+          <i class="fa fa-github fa-inverse"></i>
+        </a>
+      </div>
+
+
+
+
+    </div>
+  </footer>
+
+    <script defer type="module" src="index.js"></script>
+  </body>
+</html>
